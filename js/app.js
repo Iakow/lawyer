@@ -6,6 +6,8 @@ var counter = 1;
 c[0] = a[0];
 c[1] = a[counter];
 
+$('#svg').html(c);
+
 setInterval(function () {
   if(counter < a.length-1) 
     counter++;
@@ -16,4 +18,4 @@ setInterval(function () {
 
   $('#svg').html(c);
   
-}, 5000);
+}, 25000);
